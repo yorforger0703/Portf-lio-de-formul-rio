@@ -55,8 +55,14 @@
             <label for="">
                 Certidão de nascimento
             </label>
-            <input type="type-file" name="" id="">
-            <p>Clique aqui para selecionar os arquivos</p>
+            <div class="carrega-arquivo">
+                <label for="upload">
+                    <img src="../icons/cloud-upload.svg" alt="Clique para fazer upload" style="cursor: pointer;">
+                    <p>Clique aqui para selecionar os arquivos</p>
+                </label>
+                <input type="file" id="upload">
+            </div>
+
         </div>
 
         <!----Informações dos pais--->
@@ -92,7 +98,7 @@
 
             <div class="tipo-input">
                 <label for="">
-                    número
+                    Número
                 </label>
                 <input type="text" name="" id="" placeholder="Qual o número da sua residência?">
             </div>
@@ -109,19 +115,19 @@
                 Nome do responsável
             </label>
             <input type="text" name="" id="" placeholder="Nome completo">
-            <p>Principal responsável legal para contato de emergência</p>
+            <p class="cinzinha">Principal responsável legal para contato de emergência</p>
         </div>
         <div class="tipo-input">
             <label for="">
                 Celular
             </label>
-            <input type="tel" name="" id="" placeholder="">
+            <input type="tel" name="" id="" placeholder="Qual o seu número de celular?">
         </div>
         <div class="tipo-input">
             <label for="">
                 Email
             </label>
-            <input type="email" name="" id="" placeholder="Insira um email válido" required>
+            <div class="validar"><input type="email" name="" id="" placeholder="Insira um email válido" required></div>
         </div>
 
         <!---Opções da matrícula---->
@@ -131,86 +137,101 @@
             <label for="">
                 Selecione o turno de estudo
             </label>
-            <div class="estilo-opcoes">
-                <input type="radio" name="" id="">
-                <img src="../icons/sun-cloud-02.svg" alt="">
-                <label for="">
-                    Manhã
-                </label>
-            </div>
-            <div class="estilo-opcoes">
-                <input type="radio" name="" id="">
-                <img src="../icons/sun-02.svg" alt="">
-                <label for="">
-                    Tarde
-                </label>
+            <div class="turnos-view">
+                <div class="turno-opcoes" id="opcao">
+
+                    <div class="opcoes-icon">
+                        <img src="../icons/sun-cloud-02.svg" alt="">
+                        <label for="">
+                            Manhã
+                        </label>
+                    </div>
+
+                </div>
+                <div class="turno-opcoes" id="opcao">
+
+                    <div class="opcoes-icon">
+                        <img src="../icons/sun-02.svg" alt="">
+                        <label for="">
+                            Tarde
+                        </label>
+                    </div>
+
+                </div>
             </div>
         </div>
 
         <div class="tipo-opcoes">
             <label for="">
-                Em qual atividade você gostaria de inscrever seu filho
+                Em qual atividade você gostaria de inscrever seu filho?
             </label>
-            <div class="estilo-opcoes">
-                <input type="radio" name="" id="">
-                <img src="../icons/football.svg" alt="">
-                <label for="">
-                    Futebol
-                </label>
-            </div>
+            <div class="atividades">
+                <div class="estilo-opcoes" id="opcao">
 
-            <div class="estilo-opcoes">
-                <input type="radio" name="" id="">
-                <img src="../icons/basketball-02.svg" alt="">
-                <label for="">
-                    Basquete
-                </label>
-            </div>
+                    <img src="../icons/football.svg" alt="">
+                    <label for="">
+                        Futebol
+                    </label>
+                </div>
 
-            <div class="estilo-opcoes">
-                <input type="radio" name="" id="">
-                <img src="../icons/swimming.svg" alt="">
-                <label for="">
-                    Natação
-                </label>
-            </div>
+                <div class="estilo-opcoes" id="opcao">
 
-            <div class="estilo-opcoes">
-                <input type="radio" name="" id="">
-                <img src="../icons/yoga-02.svg" alt="">
-                <label for="">
-                    Yoga
-                </label>
-            </div>
+                    <img src="../icons/basketball-02.svg" alt="">
+                    <label for="">
+                        Basquete
+                    </label>
+                </div>
 
-            <div class="estilo-opcoes">
-                <input type="radio" name="" id="">
-                <img src="../icons/volleyball.svg" alt="">
-                <label for="">
-                    Volêi
-                </label>
-            </div>
+                <div class="estilo-opcoes" id="opcao">
 
-            <div class="estilo-opcoes">
-                <input type="radio" name="" id="">
-                <img src="../icons/boxing-glove-01.svg" alt="">
-                <label for="">
-                    Boxing
-                </label>
-            </div>
+                    <img src="../icons/swimming.svg" alt="">
+                    <label for="">
+                        Natação
+                    </label>
+                </div>
 
+                <div class="estilo-opcoes" id="opcao">
+
+                    <img src="../icons/yoga-02.svg" alt="">
+                    <label for="">
+                        Yoga
+                    </label>
+                </div>
+
+                <div class="estilo-opcoes" id="opcao">
+
+                    <img src="../icons/volleyball.svg" alt="">
+                    <label for="">
+                        Volêi
+                    </label>
+                </div>
+
+                <div class="estilo-opcoes" id="opcao">
+
+                    <img src="../icons/boxing-glove-01.svg" alt="">
+                    <label for="">
+                        Boxing
+                    </label>
+                </div>
+            </div>
         </div>
 
         <div class="final-contrato">
             <input type="checkbox">
-            <p>Declaro que li e concordo com os <strong> Termos e Condições </strong> e com a <strong> Política de
-                    Privacidade da escola Estrela do Amanhã. </strong></p>
-            <button>
-                Concluir matrícula
-            </button>
+            <p>Declaro que li e concordo com os <a
+                    href="https://idestudantil.mec.gov.br/como-podemos-ajudar/guia-da-id-estudantil/31-informacoes-sobre-a-politica-de-privacidade">
+                    Termos e Condições </a> e com a <a
+                    href="https://idestudantil.mec.gov.br/como-podemos-ajudar/guia-da-id-estudantil/31-informacoes-sobre-a-politica-de-privacidade">
+                    Política de
+                    Privacidade da escola Estrela do Amanhã. </a></p>
+
 
         </div>
+        <div class="concluir">
+            <button type="submit"> <a href="../index.html">Realizar matrícula</a></button>
+        </div>
     </div>
+    <script type="module" src="/javascript/main.js"></script>
 </body>
 <footer>
     <p>Desenvolvido por Juliana-2025</p>
