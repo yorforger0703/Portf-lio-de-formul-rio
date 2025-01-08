@@ -32,14 +32,23 @@
     margin-top: 10px;
 }
 .iniciar{
-    width: 100%;
     margin-top: 25px;
     margin-bottom: 40px;
 }
-.iniciar a{
+button{
     padding: 15px 40px;
     background-color: #E43A12;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px black;
+    transition: 0.3s;
+}
+button a{
     color: white;
+}
+button:hover{
+transform: scale(1.2);
+font-weight: bold;
 }
 footer{
     display: flex;
