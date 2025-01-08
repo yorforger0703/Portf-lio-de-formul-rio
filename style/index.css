@@ -13,6 +13,7 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 .painel p{
     font-family: 'Dancing Script';
