@@ -35,6 +35,9 @@
     margin-top: 25px;
     margin-bottom: 40px;
 }
+strong{
+    color: #E43A12;
+}
 button{
     padding: 15px 40px;
     background-color: #E43A12;
