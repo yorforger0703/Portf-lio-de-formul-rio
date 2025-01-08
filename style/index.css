@@ -13,7 +13,7 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 100vh;
 }
 .painel p{
     font-family: 'Dancing Script';
@@ -65,4 +65,20 @@ footer{
 }
 footer a{
     color: rgb(187, 181, 181);
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+    .painel{
+        height: 100vh;
+    }
+    .painel img{
+        width: 70%;
+    }
 }

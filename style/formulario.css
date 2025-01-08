@@ -208,3 +208,57 @@ footer a {
     border: 1px solid #E43A12;
 }
 
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+    .conteudo {
+        width: 80%;
+    }
+
+    .img-formulario {
+        width: 100%;
+    }
+
+    .tipo-input {
+        width: 95%;
+    }
+
+    .tipo-input-2 {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tipo-input-2 input {
+        width: 100%;
+    }
+
+    .turnos-view img {
+        width: 100%;
+    }
+
+    .atividades {
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .atividades img {
+        width: 50%;
+
+    }
+
+    .estilo-opcoes {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
