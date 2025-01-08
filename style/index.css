@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    text-decoration: none;
+}
+.painel{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #FEE7D6;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.painel p{
+    font-family: 'Dancing Script';
+    font-size: 20px;
+}
+.painel h4{
+    color: #57534E;
+    font-weight: 400;
+}
+.logo {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.iniciar{
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+.iniciar a{
+    padding: 15px 40px;
+    background-color: #E43A12;
+    color: white;
+}
+footer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #962309;
+    color: white;
+    padding: 10px;
+}
+footer a{
+    color: rgb(187, 181, 181);
+}
